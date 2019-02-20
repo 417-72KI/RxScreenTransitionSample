@@ -16,6 +16,15 @@
 		21014BFA221D69C900AD5D90 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21014BF7221D69C900AD5D90 /* RxCocoa.framework */; };
 		21014BFB221D69C900AD5D90 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21014BF8221D69C900AD5D90 /* RxSwift.framework */; };
 		21014C0F221D6F4F00AD5D90 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21014C0E221D6F4F00AD5D90 /* R.generated.swift */; };
+		21014C11221D6FAB00AD5D90 /* Prefecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21014C10221D6FAB00AD5D90 /* Prefecture.swift */; };
+		21014C16221D6FBF00AD5D90 /* SelectPrefectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21014C13221D6FBF00AD5D90 /* SelectPrefectureViewController.swift */; };
+		21014C17221D6FBF00AD5D90 /* SelectPrefecture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21014C14221D6FBF00AD5D90 /* SelectPrefecture.storyboard */; };
+		21014C18221D6FBF00AD5D90 /* SelectPrefectureDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21014C15221D6FBF00AD5D90 /* SelectPrefectureDataSource.swift */; };
+		21014C1B221D6FDD00AD5D90 /* Prefecture.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21014C1A221D6FDD00AD5D90 /* Prefecture.strings */; };
+		21014C1D221D71B700AD5D90 /* SelectPrefectureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21014C1C221D71B700AD5D90 /* SelectPrefectureViewModel.swift */; };
+		21014C1F221D76F500AD5D90 /* PrefectureSelectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21014C1E221D76F500AD5D90 /* PrefectureSelectable.swift */; };
+		21014C21221D789B00AD5D90 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21014C20221D789B00AD5D90 /* Localizable.strings */; };
+		21014C23221D78C600AD5D90 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21014C22221D78C600AD5D90 /* ViewModel.swift */; };
 		B0C641DA8D7604E5177F91D6 /* Pods_RxScreenTransitionSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84886B4930BE91FFB49DCC4 /* Pods_RxScreenTransitionSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +40,15 @@
 		21014BF7221D69C900AD5D90 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		21014BF8221D69C900AD5D90 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		21014C0E221D6F4F00AD5D90 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		21014C10221D6FAB00AD5D90 /* Prefecture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prefecture.swift; sourceTree = "<group>"; };
+		21014C13221D6FBF00AD5D90 /* SelectPrefectureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPrefectureViewController.swift; sourceTree = "<group>"; };
+		21014C14221D6FBF00AD5D90 /* SelectPrefecture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectPrefecture.storyboard; sourceTree = "<group>"; };
+		21014C15221D6FBF00AD5D90 /* SelectPrefectureDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPrefectureDataSource.swift; sourceTree = "<group>"; };
+		21014C1A221D6FDD00AD5D90 /* Prefecture.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Prefecture.strings; sourceTree = "<group>"; };
+		21014C1C221D71B700AD5D90 /* SelectPrefectureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPrefectureViewModel.swift; sourceTree = "<group>"; };
+		21014C1E221D76F500AD5D90 /* PrefectureSelectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureSelectable.swift; sourceTree = "<group>"; };
+		21014C20221D789B00AD5D90 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		21014C22221D78C600AD5D90 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		52E6A31BCFD2E2F121F19F58 /* Pods-RxScreenTransitionSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxScreenTransitionSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxScreenTransitionSample/Pods-RxScreenTransitionSample.release.xcconfig"; sourceTree = "<group>"; };
 		A84886B4930BE91FFB49DCC4 /* Pods_RxScreenTransitionSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxScreenTransitionSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6569CD51E92C0D219411530 /* Pods-RxScreenTransitionSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxScreenTransitionSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxScreenTransitionSample/Pods-RxScreenTransitionSample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +111,7 @@
 		21014C03221D6C0D00AD5D90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				21014C10221D6FAB00AD5D90 /* Prefecture.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -102,6 +121,8 @@
 			children = (
 				21014BE6221D67B000AD5D90 /* Main.storyboard */,
 				21014BE4221D67B000AD5D90 /* ViewController.swift */,
+				21014C22221D78C600AD5D90 /* ViewModel.swift */,
+				21014C12221D6FBF00AD5D90 /* SelectPrefecture */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -109,6 +130,7 @@
 		21014C08221D6CF200AD5D90 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				21014C19221D6FCF00AD5D90 /* Strings */,
 				21014BE9221D67B200AD5D90 /* Assets.xcassets */,
 				21014BEB221D67B200AD5D90 /* LaunchScreen.storyboard */,
 				21014BEE221D67B200AD5D90 /* Info.plist */,
@@ -140,6 +162,27 @@
 				21014C0E221D6F4F00AD5D90 /* R.generated.swift */,
 			);
 			path = R.Swift;
+			sourceTree = "<group>";
+		};
+		21014C12221D6FBF00AD5D90 /* SelectPrefecture */ = {
+			isa = PBXGroup;
+			children = (
+				21014C1E221D76F500AD5D90 /* PrefectureSelectable.swift */,
+				21014C14221D6FBF00AD5D90 /* SelectPrefecture.storyboard */,
+				21014C13221D6FBF00AD5D90 /* SelectPrefectureViewController.swift */,
+				21014C1C221D71B700AD5D90 /* SelectPrefectureViewModel.swift */,
+				21014C15221D6FBF00AD5D90 /* SelectPrefectureDataSource.swift */,
+			);
+			path = SelectPrefecture;
+			sourceTree = "<group>";
+		};
+		21014C19221D6FCF00AD5D90 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				21014C1A221D6FDD00AD5D90 /* Prefecture.strings */,
+				21014C20221D789B00AD5D90 /* Localizable.strings */,
+			);
+			path = Strings;
 			sourceTree = "<group>";
 		};
 		A43B1F102ED97CDEEE9AE6C3 /* Pods */ = {
@@ -214,8 +257,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				21014BED221D67B200AD5D90 /* LaunchScreen.storyboard in Resources */,
+				21014C21221D789B00AD5D90 /* Localizable.strings in Resources */,
 				21014BEA221D67B200AD5D90 /* Assets.xcassets in Resources */,
 				21014BE8221D67B000AD5D90 /* Main.storyboard in Resources */,
+				21014C17221D6FBF00AD5D90 /* SelectPrefecture.storyboard in Resources */,
+				21014C1B221D6FDD00AD5D90 /* Prefecture.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,9 +359,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21014C11221D6FAB00AD5D90 /* Prefecture.swift in Sources */,
+				21014C23221D78C600AD5D90 /* ViewModel.swift in Sources */,
+				21014C1D221D71B700AD5D90 /* SelectPrefectureViewModel.swift in Sources */,
 				21014BE5221D67B000AD5D90 /* ViewController.swift in Sources */,
+				21014C18221D6FBF00AD5D90 /* SelectPrefectureDataSource.swift in Sources */,
 				21014BE3221D67B000AD5D90 /* AppDelegate.swift in Sources */,
 				21014C0F221D6F4F00AD5D90 /* R.generated.swift in Sources */,
+				21014C1F221D76F500AD5D90 /* PrefectureSelectable.swift in Sources */,
+				21014C16221D6FBF00AD5D90 /* SelectPrefectureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,14 +6,39 @@
 //  Copyright © 2019 417.72KI. All rights reserved.
 //
 
+import RxCocoa
+import RxSwift
 import UIKit
 
 class ViewController: UIViewController {
 
+    private let bag = DisposeBag()
+    private let viewModel = ViewModel()
+
+    @IBOutlet private weak var selectPrefectureButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        bag.insert(
+            selectPrefectureButton.rx.tap
+                .flatMap { [unowned self] in self.selectPrefecture() }.debug("selectPrefecture")
+                .map { [unowned self] in self.viewModel.prefectureMessage($0) }.debug("prefectureMessage")
+                .flatMap { [unowned self] in self.showAlert(title: "", message: $0) }.debug("showAlert")
+                .subscribe()
+        )
     }
+}
 
+extension ViewController: PrefectureSelectable {
+}
 
+extension UIViewController {
+    func showAlert(title: String?, message: String?) -> Completable {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        defer { present(alert, animated: true) }
+        return Completable.create { observer in
+            alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in observer(.completed) })
+            return Disposables.create { alert.dismiss(animated: true) }
+        }
+    }
 }
