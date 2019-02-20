@@ -1,5 +1,5 @@
 //
-//  ViewModel.swift
+//  MainViewModel.swift
 //  RxScreenTransitionSample
 //
 //  Created by 417.72KI on 2019/02/20.
@@ -9,10 +9,10 @@
 import Foundation
 import RxSwift
 
-class ViewModel {
+class MainViewModel {
 }
 
-extension ViewModel {
+extension MainViewModel {
     func prefectureMessage(_ prefecture: Prefecture) -> String {
         return R.string.localizable.yourPrefecture(prefecture.localizedValue)
     }

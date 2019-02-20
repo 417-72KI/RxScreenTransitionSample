@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  RxScreenTransitionSample
 //
 //  Created by 417.72KI on 2019/02/20.
@@ -10,10 +10,10 @@ import RxCocoa
 import RxSwift
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     private let bag = DisposeBag()
-    private let viewModel = ViewModel()
+    private let viewModel = MainViewModel()
 
     @IBOutlet private weak var selectPrefectureButton: UIButton!
 
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: PrefectureSelectable {
+extension MainViewController: PrefectureSelectable {
 }
 
 extension UIViewController {
