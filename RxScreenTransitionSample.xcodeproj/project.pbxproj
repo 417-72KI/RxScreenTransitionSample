@@ -25,6 +25,7 @@
 		21014C1F221D76F500AD5D90 /* PrefectureSelectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21014C1E221D76F500AD5D90 /* PrefectureSelectable.swift */; };
 		21014C21221D789B00AD5D90 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21014C20221D789B00AD5D90 /* Localizable.strings */; };
 		21014C23221D78C600AD5D90 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21014C22221D78C600AD5D90 /* MainViewModel.swift */; };
+		212ACEEA2223FA5E00CC173A /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212ACEE92223FA5E00CC173A /* Errors.swift */; };
 		B0C641DA8D7604E5177F91D6 /* Pods_RxScreenTransitionSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84886B4930BE91FFB49DCC4 /* Pods_RxScreenTransitionSample.framework */; };
 		B94D3B2D221DC04E0029BD81 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94D3B2C221DC04E0029BD81 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		21014C1E221D76F500AD5D90 /* PrefectureSelectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefectureSelectable.swift; sourceTree = "<group>"; };
 		21014C20221D789B00AD5D90 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		21014C22221D78C600AD5D90 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		212ACEE92223FA5E00CC173A /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		52E6A31BCFD2E2F121F19F58 /* Pods-RxScreenTransitionSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxScreenTransitionSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxScreenTransitionSample/Pods-RxScreenTransitionSample.release.xcconfig"; sourceTree = "<group>"; };
 		A84886B4930BE91FFB49DCC4 /* Pods_RxScreenTransitionSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxScreenTransitionSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94D3B2C221DC04E0029BD81 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				21014C10221D6FAB00AD5D90 /* Prefecture.swift */,
+				212ACEE92223FA5E00CC173A /* Errors.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				21014BE5221D67B000AD5D90 /* MainViewController.swift in Sources */,
 				21014C18221D6FBF00AD5D90 /* SelectPrefectureDataSource.swift in Sources */,
 				21014BE3221D67B000AD5D90 /* AppDelegate.swift in Sources */,
+				212ACEEA2223FA5E00CC173A /* Errors.swift in Sources */,
 				21014C0F221D6F4F00AD5D90 /* R.generated.swift in Sources */,
 				21014C1F221D76F500AD5D90 /* PrefectureSelectable.swift in Sources */,
 				21014C16221D6FBF00AD5D90 /* SelectPrefectureViewController.swift in Sources */,

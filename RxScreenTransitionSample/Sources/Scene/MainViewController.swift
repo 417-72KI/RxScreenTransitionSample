@@ -10,10 +10,10 @@ import RxCocoa
 import RxSwift
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, MainView {
 
     private let bag = DisposeBag()
-    private let viewModel = MainViewModel()
+    private lazy var viewModel = MainViewModel(view: self)
 
     @IBOutlet private weak var selectPrefectureButton: UIButton!
 
@@ -21,13 +21,9 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         bag.insert(
             selectPrefectureButton.rx.tap
-                .flatMap { [unowned self] in self.selectPrefecture() }.debug("selectPrefecture")
-                .map { [unowned self] in self.viewModel.prefectureMessage($0) }.debug("prefectureMessage")
+                .flatMap { [unowned self] in self.viewModel.prefectureMessage }.debug("selectPrefecture")
                 .flatMap { [unowned self] in self.showAlert(title: "", message: $0) }.debug("showAlert")
                 .subscribe()
         )
     }
-}
-
-extension MainViewController: PrefectureSelectable {
 }

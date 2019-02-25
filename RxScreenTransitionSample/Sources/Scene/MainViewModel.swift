@@ -9,11 +9,34 @@
 import Foundation
 import RxSwift
 
+protocol MainView: class, PrefectureSelectable {
+}
+
 class MainViewModel {
+    private weak var view: MainView?
+
+    init(view: MainView) {
+        self.view = view
+    }
 }
 
 extension MainViewModel {
-    func prefectureMessage(_ prefecture: Prefecture) -> String {
+    var prefectureMessage: Maybe<String> {
+        return selectPrefecture()
+            .map { [unowned self] in self.createMessage(withPrefecture: $0) }
+    }
+}
+
+private extension MainViewModel {
+    func selectPrefecture() -> Maybe<Prefecture> {
+        guard let view = view else {
+            assertionFailure("view is disposed")
+            return Maybe.error(Error.unknown)
+        }
+        return view.selectPrefecture()
+    }
+
+    func createMessage(withPrefecture prefecture: Prefecture) -> String {
         return R.string.localizable.yourPrefecture(prefecture.localizedValue)
     }
 }
