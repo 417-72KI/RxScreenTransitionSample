@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "都道府県を選択する"; ObjectID = "XAC-WF-xvL"; */
+"XAC-WF-xvL.normalTitle" = "都道府県を選択する";
+
+/* Class = "UIButton"; normalTitle = "リセット"; ObjectID = "fAm-Ed-xtQ"; */
+"fAm-Ed-xtQ.normalTitle" = "リセット";
+
+/* Class = "UILabel"; text = "選択した都道府県がここに表示されます"; ObjectID = "kOz-Z1-Hfc"; */
+"kOz-Z1-Hfc.text" = "選択した都道府県がここに表示されます";

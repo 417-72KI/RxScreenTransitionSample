@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Select Prefecture"; ObjectID = "XAC-WF-xvL"; */
+"XAC-WF-xvL.normalTitle" = "Select Prefecture";
+
+/* Class = "UIButton"; normalTitle = "Reset"; ObjectID = "fAm-Ed-xtQ"; */
+"fAm-Ed-xtQ.normalTitle" = "Reset";
+
+/* Class = "UILabel"; text = "Prefecture you selected displays here."; ObjectID = "kOz-Z1-Hfc"; */
+"kOz-Z1-Hfc.text" = "Prefecture you selected displays here.";
