@@ -28,18 +28,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAm-Ed-xtQ">
+                                <rect key="frame" x="168" y="537" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="kOz-Z1-Hfc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="L1i-Ue-Tfs"/>
                             <constraint firstItem="kOz-Z1-Hfc" firstAttribute="top" secondItem="XAC-WF-xvL" secondAttribute="bottom" constant="20" id="T2c-tX-35w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fAm-Ed-xtQ" secondAttribute="bottom" constant="100" id="c7f-Xd-oIa"/>
                             <constraint firstItem="XAC-WF-xvL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iO1-QD-Lof"/>
                             <constraint firstItem="XAC-WF-xvL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ihH-Fg-shv"/>
+                            <constraint firstItem="fAm-Ed-xtQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mNI-W5-WIS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kOz-Z1-Hfc" secondAttribute="trailing" constant="20" id="p4j-xd-qQq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="resetButton" destination="fAm-Ed-xtQ" id="wC1-wt-tfP"/>
                         <outlet property="resultLabel" destination="kOz-Z1-Hfc" id="Hj0-Ml-SCd"/>
                         <outlet property="selectPrefectureButton" destination="XAC-WF-xvL" id="GRN-nw-Oz3"/>
                     </connections>
