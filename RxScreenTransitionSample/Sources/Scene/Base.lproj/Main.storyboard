@@ -22,15 +22,25 @@
                                 <rect key="frame" x="128" y="318.5" width="119" height="30"/>
                                 <state key="normal" title="Select Prefecture"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prefecture you selected displays here." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOz-Z1-Hfc">
+                                <rect key="frame" x="20" y="368.5" width="335" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="kOz-Z1-Hfc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="L1i-Ue-Tfs"/>
+                            <constraint firstItem="kOz-Z1-Hfc" firstAttribute="top" secondItem="XAC-WF-xvL" secondAttribute="bottom" constant="20" id="T2c-tX-35w"/>
                             <constraint firstItem="XAC-WF-xvL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iO1-QD-Lof"/>
                             <constraint firstItem="XAC-WF-xvL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ihH-Fg-shv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kOz-Z1-Hfc" secondAttribute="trailing" constant="20" id="p4j-xd-qQq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="resultLabel" destination="kOz-Z1-Hfc" id="Hj0-Ml-SCd"/>
                         <outlet property="selectPrefectureButton" destination="XAC-WF-xvL" id="GRN-nw-Oz3"/>
                     </connections>
                 </viewController>

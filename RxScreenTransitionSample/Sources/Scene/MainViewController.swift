@@ -17,6 +17,7 @@ class MainViewController: UIViewController, MainView {
 
     // MARK: Outlets
     @IBOutlet private weak var selectPrefectureButton: UIButton!
+    @IBOutlet private weak var resultLabel: UILabel!
 
     // MARK: Life cycles
     override func viewDidLoad() {
@@ -24,8 +25,7 @@ class MainViewController: UIViewController, MainView {
         bag.insert(
             selectPrefectureButton.rx.tap
                 .flatMap { [unowned self] in self.viewModel.prefectureMessage }.debug("selectPrefecture")
-                .flatMap { [unowned self] in self.showAlert(title: "", message: $0) }.debug("showAlert")
-                .subscribe()
+                .bind(to: resultLabel.rx.text)
         )
     }
 }
