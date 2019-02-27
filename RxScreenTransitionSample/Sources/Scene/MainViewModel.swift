@@ -20,6 +20,7 @@ class MainViewModel {
     }
 }
 
+// MARK: - Properties
 extension MainViewModel {
     var prefectureMessage: Maybe<String> {
         return selectPrefecture()
@@ -27,6 +28,7 @@ extension MainViewModel {
     }
 }
 
+// MARK: - Private Functions
 private extension MainViewModel {
     func selectPrefecture() -> Maybe<Prefecture> {
         guard let view = view else {

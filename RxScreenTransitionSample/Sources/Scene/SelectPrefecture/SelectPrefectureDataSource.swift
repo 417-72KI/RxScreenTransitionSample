@@ -33,7 +33,7 @@ class SelectPrefectureDataSource: NSObject, RxTableViewDataSourceType {
     }
 }
 
-// MARK: Properties
+// MARK: - Properties
 extension SelectPrefectureDataSource {
     var selectedPrefecture: Observable<Prefecture> {
         return selectedPrefectureSubject.asObservable()

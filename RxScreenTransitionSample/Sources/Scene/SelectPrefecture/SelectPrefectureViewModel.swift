@@ -13,6 +13,7 @@ class SelectPrefectureViewModel {
     private let prefecturesSubject = BehaviorSubject<[Prefecture]>(value: Prefecture.allCases)
 }
 
+// MARK: - Properties
 extension SelectPrefectureViewModel {
     var prefectures: Observable<[Prefecture]> {
         return prefecturesSubject.asObservable()

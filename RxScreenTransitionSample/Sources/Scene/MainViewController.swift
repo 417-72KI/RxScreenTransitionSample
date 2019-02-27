@@ -15,8 +15,10 @@ class MainViewController: UIViewController, MainView {
     private let bag = DisposeBag()
     private lazy var viewModel = MainViewModel(view: self)
 
+    // MARK: Outlets
     @IBOutlet private weak var selectPrefectureButton: UIButton!
 
+    // MARK: Life cycles
     override func viewDidLoad() {
         super.viewDidLoad()
         bag.insert(

@@ -18,9 +18,11 @@ class SelectPrefectureViewController: UIViewController {
 
     private let selectedPrefectureSubject = PublishSubject<Prefecture>()
 
+    // MARK: Outlets
     @IBOutlet private weak var closeButton: UIBarButtonItem!
     @IBOutlet private weak var tableView: UITableView!
 
+    // MARK: Life cycles
     override func viewDidLoad() {
         super.viewDidLoad()
 
