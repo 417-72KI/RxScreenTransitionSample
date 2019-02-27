@@ -24,6 +24,6 @@ extension PrefectureSelectable where Self: UIViewController {
         defer {
             present(nav, animated: true)
         }
-        return selectPrefectureVC.prefecture.asMaybe()
+        return selectPrefectureVC.prefecture.asMaybe().debug("SelectPrefectureViewController")
     }
 }
